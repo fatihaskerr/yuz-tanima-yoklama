@@ -1,0 +1,310 @@
+.admin-panel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-panel .navbar {
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+}
+
+.admin-panel .navbar-item img {
+  max-height: 40px;
+}
+
+.admin-panel .tabs {
+  margin-top: 1rem;
+}
+
+.admin-panel .tabs.is-boxed a {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.5rem;
+}
+
+.admin-panel .tabs ul {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.content-container {
+  padding: 1rem 0;
+}
+
+/* Panel heading styles */
+.panel-heading .has-text-black {
+  color: #000 !important;
+}
+
+/* Table styling */
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Modal styling for attendance editing */
+.attendance-edit-modal {
+  width: 80%;
+  max-width: 900px;
+}
+
+.attendance-edit-modal .modal-card-body {
+  padding: 1.5rem;
+}
+
+/* Better spacing for attendance table */
+.attendance-table th:last-child {
+  width: 200px;
+}
+
+.attendance-table td .field {
+  margin-bottom: 0;
+}
+
+/* Switch Toggle styling for attendance */
+.switch {
+  display: none;
+}
+
+.switch + label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.switch + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #e0e0e0;
+  transition: background-color 0.25s ease;
+}
+
+.switch + label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.25s ease;
+}
+
+.switch:checked + label::before {
+  background-color: #00d1b2;
+}
+
+.switch:checked + label::after {
+  transform: translateX(30px);
+}
+
+.switch:checked + label {
+  padding-left: 5px;
+  color: #00d1b2;
+}
+
+.switch + label {
+  padding-left: 70px;
+  line-height: 30px;
+  color: #7a7a7a;
+  font-weight: normal;
+}
+
+/* Panel styling */
+.panel-heading {
+  transition: background-color 0.2s ease;
+}
+
+.panel-heading:hover {
+  background-color: #eef6fc !important;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  .admin-panel .tabs.is-boxed li {
+    display: block;
+    width: 100%;
+  }
+  
+  .admin-panel .tabs.is-boxed li a {
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .level-item {
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+  }
+  
+  .level {
+    flex-direction: column;
+  }
+  
+  .level-left, .level-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttons.are-small .button {
+    margin-right: 0.25rem;
+  }
+  
+  .attendance-edit-modal {
+    width: 95%;
+  }
+}
+
+/* Modal styling */
+.modal-card {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+.modal-card-body {
+  max-height: calc(90vh - 160px);
+  overflow-y: auto;
+}
+
+/* Progress bar */
+.progress::-webkit-progress-value {
+  transition: width 0.5s ease;
+}
+
+.admin-header {
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-content {
+  padding: 24px;
+}
+
+.admin-card {
+  margin-bottom: 24px;
+  transition: all 0.3s;
+}
+
+.admin-card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stats-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stats-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #1976d2;
+}
+
+.stats-value {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.stats-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .admin-content {
+    padding: 16px 8px;
+  }
+  
+  .admin-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.course-panel {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.course-header {
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.course-header:hover {
+  background-color: #efefef;
+}
+
+.course-content {
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Fix navbar spacing issue */
+.navbar {
+  height: auto !important;
+  min-height: 3.25rem;
+}
+
+.navbar-brand, .navbar-item {
+  height: auto !important;
+  min-height: 3.25rem;
+  align-items: center;
+  display: flex;
+}
+
+/* Make table more compact */
+.attendance-table td, .attendance-table th {
+  padding: 0.5em 0.75em;
+  vertical-align: middle;
+}
+
+/* Make read-only fields look elegant */
+.has-background-light.p-2.rounded {
+  border-radius: 4px;
+  line-height: 1.5;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+/* Tabs styling fix */
+.tabs {
+  margin-bottom: 0.75rem !important;
+}
+
+/* Ensure all tabs use the same height */
+.tab-content {
+  padding: 1rem 0;
+  min-height: 300px;
+} 

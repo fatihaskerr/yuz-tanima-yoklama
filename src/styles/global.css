@@ -1,0 +1,66 @@
+/* Notification container styles */
+.notification-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  /* Modal styles */
+  .modal-card {
+    max-height: 80vh;
+  }
+  
+  .modal-card-body {
+    max-height: calc(80vh - 160px);
+    overflow-y: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .box {
+      margin: 0.5rem;
+      padding: 1rem;
+    }
+  }
+  
+  .message-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 600px;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .message-body {
+    position: relative;
+    padding-right: 2rem !important;
+  }
+  
+  .message-body .delete {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
