@@ -29,7 +29,7 @@
    npm run dev
    ```
 
-## Admin Kullanıcısı Oluşturma
+## Admin Kullanıcısı Oluşturmak
 
 Admin paneline erişmek için bir admin kullanıcısı oluşturmanız gerekir:
 
