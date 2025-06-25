@@ -12,8 +12,8 @@ def send_verification_email(to_email, verification_code):
     """Doğrulama kodunu e-posta ile gönderir"""
     try:
         # E-posta ayarları
-        sender_email = "emir.goc@gmx.com"
-        sender_password = "yoklamasistemi"
+        sender_email = "your mail"
+        sender_password = "your password"
         
         # E-posta içeriği
         message = MIMEMultipart()
